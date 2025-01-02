@@ -22,43 +22,49 @@ A simple quiz application built with Flask that supports both multiple-choice an
 ```bash
 git clone git@github.com:mock3ng/KodlandCase.git
 cd quiz-app
+
+```
+
 Create and activate virtual environment
 For Windows:
 
-bash
-
-Copy
+```bash
 python -m venv env
 env\Scripts\activate
+
+```
 For macOS/Linux:
 
-bash
-
-Copy
+```bash
 python3 -m venv env
 source env/bin/activate
-Install required packages
-bash
+```
 
-Copy
+Install required packages
+
+```bash
 pip install -r requirements.txt
+```
 Configuration
 Create a questions.json file in the root directory with your quiz questions
 The application uses SQLite database by default - it will be created automatically
-Running the Application
-Start the Flask development server:
-bash
 
-Copy
+Running the Application
+
+Start the Flask development server:
+
+```bash
 python app.py
+```
 Open your web browser and navigate to:
 
-Copy
-http://localhost:5000
-Project Structure
-basic
 
-Copy
+```bash
+http://localhost:5000
+```
+
+
+
 quiz-app/
 │
 ├── app.py              # Main application file
@@ -71,6 +77,7 @@ quiz-app/
 │   └── quiz_result.html # Results page template
 └── instance/          
     └── users.db       # SQLite database
+    
 Requirements
 Key dependencies:
 
@@ -80,8 +87,7 @@ Flask-Login
 Werkzeug
 See requirements.txt for complete list.
 
-License
-This project is licensed under the MIT License - see the LICENSE file for details
+
 
 Author
 Ergün Çalbay
