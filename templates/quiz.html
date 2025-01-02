@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <title>Sınav</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+        }
+        h1 {
+            text-align: center;
+        }
+        .score {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+        }
+        .question {
+            margin-bottom: 20px;
+            padding: 15px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+        }
+        .text-input {
+            width: 100%;
+            padding: 8px;
+            margin-top: 5px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+        }
+        button {
+            padding: 10px 20px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #45a049;
+        }
+        footer {
+            text-align: center;
+            margin-top: 20px;
+            font-size: 0.9em;
+            color: gray;
+        }
+    </style>
+</head>
+<body>
+    <h1>Sınav</h1>
+    <div class="score">En İyi Sonucunuz: {{ best_score }}</div>
+    <form method="POST">
+        {% for question in questions %}
+            <div class="question">
+                <p>{{ question['question'] }}</p>
+                {% if question['type'] == 'multiple_choice' %}
+                    {% for option in question['options'] %}
+                        <input type="radio" name="{{ question['id'] }}" value="{{ option }}" required> {{ option }}<br>
+                    {% endfor %}
+                {% else %}
+                    <input type="text" name="{{ question['id'] }}" class="text-input" required>
+                {% endif %}
+            </div>
+        {% endfor %}
+        <button type="submit">Gönder</button>
+    </form>
+    <footer>
+        Powered by Ergün Çalbay
+    </footer>
+</body>
+</html>

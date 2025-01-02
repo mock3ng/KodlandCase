@@ -1,0 +1,37 @@
+{
+    "questions": [
+        {
+            "id": "q1",
+            "type": "multiple_choice",
+            "question": "Python'da bir derin öğrenme modelinin eğitimi için hangi kütüphane yaygın olarak kullanılır?",
+            "options": ["TensorFlow", "scikit-learn", "requests", "pandas"],
+            "answer": "TensorFlow"
+        },
+        {
+            "id": "q2",
+            "type": "multiple_choice",
+            "question": "Bilgisayar görüşü ile aşağıdakilerden hangisi yapılabilir?",
+            "options": ["Yüz tanıma", "Sesli yanıt oluşturma", "Duygu analizi", "Metin sınıflandırma"],
+            "answer": "Yüz tanıma"
+        },
+        {
+            "id": "q3",
+            "type": "text",
+            "question": "NLP'nin açılımı nedir?",
+            "answer": "Natural Language Processing"
+        },
+        {
+            "id": "q4",
+            "type": "text",
+            "question": "Python'da string metodlarından hangisi büyük harfleri küçük harfe çevirir?",
+            "answer": "lower"
+        },
+        {
+            "id": "q5",
+            "type": "multiple_choice",
+            "question": "AI modelleri için veri setini hazırlamak için hangi adımlar gereklidir?",
+            "options": ["Veri setini hazırlamak", "Veri temizleme ve işleme", "Veri doğrulama", "Veri görselleştirme"],
+            "answer": "Veri setini hazırlamak"
+        }
+    ]
+}
