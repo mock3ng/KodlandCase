@@ -1,6 +1,4 @@
-markdown
 
-Copy
 # Quiz Application Quick Start Guide
 
 A simple quiz application built with Flask that supports both multiple-choice and text-based questions.
