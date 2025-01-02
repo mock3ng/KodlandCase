@@ -62,7 +62,7 @@ http://localhost:5000
 ```
 
 
-
+```bash
 quiz-app/
 │
 ├── app.py              # Main application file
@@ -75,7 +75,7 @@ quiz-app/
 │   └── quiz_result.html # Results page template
 └── instance/          
     └── users.db       # SQLite database
-    
+ ```   
 Requirements
 Key dependencies:
 
